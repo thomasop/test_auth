@@ -1,5 +1,5 @@
 const fetchLogout = async () => {
-    let response = await fetch("http://localhost:8080/user/logout", {
+    let response = await fetch("https://auth-workshop-api-dphxzibc2a-ew.a.run.app/user/logout", {
         method: 'get',
         credentials: 'include'
     })

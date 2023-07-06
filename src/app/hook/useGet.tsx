@@ -2,7 +2,7 @@ import React from 'react'
 import useSWR from 'swr'
 
 const fetchAdmin = async () => {
-    let response = await fetch('http://localhost:8080/user/admin', {
+    let response = await fetch('https://auth-workshop-api-dphxzibc2a-ew.a.run.app/user/admin', {
         method: 'get',
         credentials: "include"
     })
