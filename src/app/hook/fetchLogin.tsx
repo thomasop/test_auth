@@ -1,5 +1,6 @@
 
 const fetchLogin = async (url: string, {arg}: {arg: {email: string, password: string}}) => {
+    console.log(arg)
     let response = await fetch('https://auth-workshop-api-dphxzibc2a-ew.a.run.app/user/login', {
         method: 'post',
         headers: {
