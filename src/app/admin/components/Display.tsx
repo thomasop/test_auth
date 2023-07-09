@@ -7,7 +7,7 @@ const Display = () => {
     const {push} = useRouter()
     const {data} = useGet()
     useEffect(() => {
-        if (data && data.status === 401) {
+        if (data && data.status !== 200) {
             push('/')
         }
     }, [data, push])

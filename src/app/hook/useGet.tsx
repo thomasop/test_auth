@@ -4,7 +4,6 @@ import useSWR from 'swr'
 const fetchAdmin = async () => {
     let response = await fetch('https://auth-workshop-api-dphxzibc2a-ew.a.run.app/user/admin', {
         method: 'get',
-        credentials: "include"
     })
     let json = await response.json()
     return json
