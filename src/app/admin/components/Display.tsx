@@ -11,7 +11,6 @@ const Display = () => {
             push('/')
         }
     }, [data, push])
-    console.log(data)
   return (
     <div>Display</div>
   )
